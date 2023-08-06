@@ -6,6 +6,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+}
+
 html, body{
     height: 100vh;
     width: 100vw;
@@ -27,21 +32,21 @@ section#telefone{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    height: 627px;
+    
+    
+    height: 568px;
     width: 311px;
-    background: url('../pacote-d013/imagens/frame-iphone.png') no-repeat;
-    /* background-size: contain; */
+    background: url('../pacote-d013/imagens/frame-iphone-p.png') no-repeat fixed;
+    background-size: contain;
 }
 
 iframe#tela{
     position: relative;
-    top: 80px;
-    left: 22px;
-
-    height: 471px;
-    width: 268px;
-    border-radius: 2px;
+    top: 74px;
+    left: 21px;
+    height: 424px;
+    width: 241px;
+    border-radius: 3px;
 }
 
 #redes-sociais{
@@ -61,4 +66,20 @@ iframe#tela{
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.401);
     transition: transform .3s, border .5s;
+}
+
+.prop{
+    position: absolute;
+    top: 95%;
+    left: 3%;
+    max-width: 194px;
+    color: rgba(0, 0, 0, 0.452);
+}
+.prop a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.prop a:hover{
+    color: black;
 }
